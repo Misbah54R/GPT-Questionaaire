@@ -18,8 +18,8 @@ class LoginController extends Controller
         if (Auth::attempt($attributes))
         {
 
-        /*    return redirect()->route('home');   */
-            return 'login successfull' ;
+          return redirect()->route('skillset');   
+            
         }
         return redirect()->back();
     

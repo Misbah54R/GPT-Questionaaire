@@ -24,6 +24,8 @@ class RegisterController extends Controller
         
         try {
             User::create($attributes);
+            return redirect()->route('skillset');
+
 
         } catch(Throwable $th)
         {
